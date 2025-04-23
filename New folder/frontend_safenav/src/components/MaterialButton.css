@@ -1,0 +1,79 @@
+/* Material Button Styles - inspired by Material Design and the provided image */
+.mat-btn {
+  font-family: 'Quicksand', 'Nunito', 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.55em 1.8em;
+  margin: 0.25em;
+  border-radius: 2em;
+  background: #e0e7ef;
+  color: #222;
+  transition: box-shadow 0.18s, background 0.18s, color 0.18s, border 0.18s;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-btn-rounded { border-radius: 2em; }
+.mat-btn-radius { border-radius: 0.8em; }
+.mat-btn-square { border-radius: 0.2em; }
+.mat-btn-pill { border-radius: 999px; }
+
+/* Color themes */
+.mat-btn-blue { background: #59c7f9; color: #fff; }
+.mat-btn-blue:hover, .mat-btn-blue:focus { background: #39b3e6; }
+
+.mat-btn-pink { background: #ff8bb3; color: #fff; }
+.mat-btn-pink:hover, .mat-btn-pink:focus { background: #ff5b93; }
+
+.mat-btn-gray { background: #e0e7ef; color: #222; }
+.mat-btn-gray:hover, .mat-btn-gray:focus { background: #cfd8dc; }
+
+.mat-btn-green { background: #6be585; color: #fff; }
+.mat-btn-green:hover, .mat-btn-green:focus { background: #3fc16f; }
+
+.mat-btn-red { background: #ff7979; color: #fff; }
+.mat-btn-red:hover, .mat-btn-red:focus { background: #e74c3c; }
+
+.mat-btn-outline {
+  background: #fff;
+  color: #59c7f9;
+  border: 2px solid #59c7f9;
+}
+.mat-btn-outline:hover, .mat-btn-outline:focus {
+  background: #e3f7ff;
+  color: #222;
+}
+
+.mat-btn-gradient {
+  background: linear-gradient(90deg, #ff8bb3 0%, #59c7f9 100%);
+  color: #fff;
+}
+.mat-btn-gradient:hover, .mat-btn-gradient:focus {
+  filter: brightness(0.96);
+}
+
+.mat-btn-disabled, .mat-btn:disabled {
+  background: #e0e7ef !important;
+  color: #aaa !important;
+  border: none !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+}
+
+/* Icon button */
+.mat-btn-icon {
+  padding: 0.55em 1em;
+  font-size: 1.1em;
+}
+
+/* Add spacing for icons */
+.mat-btn svg, .mat-btn .icon {
+  margin-right: 0.5em;
+  display: inline-block;
+}

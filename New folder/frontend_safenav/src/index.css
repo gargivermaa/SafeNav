@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  @apply font-sans bg-gray-50 text-gray-800;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  @apply font-bold text-gray-900 scroll-mt-24; /* Ensures headings are not hidden under navbar */
+}
+
+/* Links */
+a {
+  @apply transition duration-200 ease-in-out;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1e40af;
+}
+
+/* Container Utility */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Section Padding Fix (For header overlap issues) */
+.main-content {
+  @apply pt-24;
+}
